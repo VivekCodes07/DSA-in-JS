@@ -12,7 +12,6 @@ b = temp; // b = 10
 
 console.log(`After swapping: a = ${a}, b = ${b}\n`);
 
-
 // Method 2: Swapping without using a third variable
 {
   let a = 5;
@@ -25,6 +24,19 @@ console.log(`After swapping: a = ${a}, b = ${b}\n`);
   a = a + b; // a = 12, b = 7
   b = a - b; // b = 5, a = 12
   a = a - b; // a = 7, b = 5
+
+  console.log(`After swapping: a = ${a}, b = ${b}`);
+}
+
+// Method 3: Destructuring assignment
+
+{
+  let a = 30;
+  let b = 50;
+
+  console.log(`Before swapping: a = ${a}, b = ${b}`);
+
+  [a, b] = [b, a];
 
   console.log(`After swapping: a = ${a}, b = ${b}`);
 }
